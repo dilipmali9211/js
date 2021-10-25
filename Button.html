@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var h = document.createElement('header');
+        h.innerHTML = ('header');
+        h.setAttribute('class', 'D_header');
+
+        var m = document.createElement("div");
+        var f = document.createElement('footer');
+
+        console.log(h);
+        console.log(m);
+        console.log(f);
+
+
+        document.body.appendChild(h);
+        document.body.appendChild(m);
+
+        document.querySelector('header.D_header ~ div').setAttribute('class', "D_main")
+        var x = document.getElementsByClassName('D_main')
+        console.log(x[0]);
+        x[0].style.color = 'red'
+
+        document.body.appendChild(f);
+
+        document.querySelector('div').innerHTML = ('main area');
+        //var v= document.querySelector('div ~ footer')
+        var v = document.querySelector('div ~ footer');
+        v.innerHTML = ('footer')
+
+        // create button
+        var b = document.createElement('button')
+        b.innerHTML = 'Click'
+        console.log(b);
+        v.appendChild(b)
+        var c = document.getElementsByTagName('button')
+        console.log(c[0])
+
+        c[0].addEventListener('click', function () {
+            alert('ok')
+            h.style.color = 'blue'
+        });
+
+    </script>
+</body>
+
+</html>

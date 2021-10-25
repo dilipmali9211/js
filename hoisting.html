@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        x = document.createElement('i');
+        x.setAttribute('class', 'fas');
+        x.classList.add('class', 'fa-home');
+        console.log(x);
+        document.body.appendChild(x);
+
+        var i=document.createElement('link');
+        i.setAttribute('rel','stylesheet');
+        i.setAttribute('href','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+        console.log(i);
+        document.head.appendChild(i);
+        var x;
+    </script>
+</body>
+
+</html>

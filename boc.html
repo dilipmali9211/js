@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = document.createElement('header');
+        var b = document.createElement('div');
+        var b1 = document.createElement('div');
+        var b2 = document.createElement('div');
+        var b3 = document.createElement('div');
+        var b4 = document.createElement('div');
+        var ab1 = document.createElement('div');
+        var ab2 = document.createElement('div');
+        var ab3 = document.createElement('div');
+        var ab4 = document.createElement('div');
+        var c = document.createElement('footer');
+        document.body.appendChild(b);
+
+        console.log(b)
+        b.setAttribute('class', 'a_div');
+        b.style.width = "500px";
+        b.style.height = "500px";
+        b.style.margin = "auto";
+        b.style.backgroundColor = "red";
+         
+        
+
+        b.appendChild(b1);
+        //b1.innerHTML="1"
+        console.log(b1);
+        b1.setAttribute('class', 'a1_div');
+        b1.style.width ='250px';
+        b1.style.height ='250px';
+        b1.style.backgroundColor ="blue";
+        b1.style.float ="right"
+        //b1.style.borderTopRightRadius= '250px '
+
+        b1.appendChild(ab1);
+        //ab1.innerHTML="1"
+        console.log(ab1);
+        ab1.setAttribute('class', 'a1_div');
+        ab1.style.width ='250px';
+        ab1.style.height ='250px';
+        ab1.style.backgroundColor ="black";
+        //ab1.style.float ="right"
+        ab1.style.borderTopRightRadius= '250px '
+
+
+        b.appendChild(b2);
+        //b2.innerHTML="2"
+        console.log(b2);
+        b2.setAttribute('class', 'a1_div');
+        b2.style.width ='250px';
+        b2.style.height ='250px';
+        b2.style.backgroundColor ="green";
+        b2.style.float ="right";
+        //b2.style.borderTopLeftRadius= '250px '
+
+        b2.appendChild(ab2);
+        //ab2.innerHTML="2"
+        console.log(ab2);
+        ab2.setAttribute('class', 'a1_div');
+        ab2.style.width ='250px';
+        ab2.style.height ='250px';
+        ab2.style.backgroundColor ="orange";
+        //ab2.style.float ="right";
+        ab2.style.borderTopLeftRadius= '250px '
+
+
+
+        b.appendChild(b3);
+        //b3.innerHTML="3"
+        console.log(b3);
+        b3.setAttribute('class', 'a1_div');
+        b3.style.width ='250px';
+        b3.style.height ='250px';
+        b3.style.backgroundColor ="yellow";
+        b3.style.float ="right";
+        //b3.style.borderBottomRightRadius= '250px '
+
+
+        b3.appendChild(ab3);
+        //ab3.innerHTML="3"
+        console.log(ab3);
+        ab3.setAttribute('class', 'a1_div');
+        ab3.style.width ='250px';
+        ab3.style.height ='250px';
+        ab3.style.backgroundColor ="orange";
+        ab3.style.float ="right";
+        ab3.style.borderBottomRightRadius= '250px '
+
+
+        b.appendChild(b4);
+        b4.innerHTML="4"
+        console.log(b4);
+        b4.setAttribute('class', 'a1_div');
+        b4.style.width ='250px';
+        b4.style.height ='250px';
+        b4.style.backgroundColor ="brown";
+        b4.style.float ="right";
+        b4.style.borderBottomLeftRadius= '250px '
+
+
+</script>
+</body>
+
+</html>
